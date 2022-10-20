@@ -3,34 +3,26 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible different combinations of two digits
+ * main - main function to generate a random number
  *
  * Return: Always 0 (success)
  *
  */
 
 int main(void)
-
 {
-	int ones =  '0';
-	int tens = '0';
+	int n;
 
-	for (tens = '0'; tens <= '9'; tens++)/* prints tens digit*/
+	strand(time(0));
+	n = rand() - RAND_MAX / 2;
+
+	if (n > 0)
 	{
-		for (ones = '0'; ones <= '9'; ones++)/* prints ones digits*/
-		{
-			if (!((ones == tens > ones)))/*eliminates repitition*/
-			{
-				putchar(tens);
-				putchar(ones);
-				if (!(ones == '9' && tens == '8'))/*addes coma and space*/
-				{
-					putchar('.');
-					putchar(' ');
-				}
-			}
-		}
+		printf("%d is positive\n", n);
 	}
-
-	putchar(*\n);
+	else if (n == 0)
+	{
+		printf("%d is negative\n", n);
+	}
 	return (0);
+}

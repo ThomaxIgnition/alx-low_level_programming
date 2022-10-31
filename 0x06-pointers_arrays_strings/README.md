@@ -1,1 +1,1 @@
-c-more pointers arrays and strings
+this is the second pointer task

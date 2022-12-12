@@ -2,24 +2,23 @@
 #include <stdlib.h>
 
 /**
- * main - return single integer from 0-10
+ * main - returns an alphabet in reverse order
  *
  * Return: Always 0 (Success)
  */
 
 int main(void)
-
 {
-	int num = '0';
+	int ch = 'z';
 
-	while (num <= '9')
+	while (ch >= 'a')
 	{
-		putchar(num);
-		num++;
+		putchar(ch);
+		ch--;
 	}
-
 	putchar('\n');
 
 	return (0);
+}
 
 }
